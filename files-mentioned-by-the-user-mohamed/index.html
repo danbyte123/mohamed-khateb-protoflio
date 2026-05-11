@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Mohamed Khateb portfolio - software engineer, data analyst, and DevZone founder."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700;800&family=Pirata+One&family=Space+Grotesk:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Mohamed Khateb | Portfolio</title>
+  </head>
+  <body>
+    <canvas id="space-scene" aria-hidden="true"></canvas>
+    <div class="grain" aria-hidden="true"></div>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Mohamed Khateb home">
+        <span>MK</span>
+      </a>
+      <nav class="nav" aria-label="Portfolio pages">
+        <button class="nav-link is-active" type="button" data-page-link="home">Home</button>
+        <button class="nav-link" type="button" data-page-link="experience">Experience</button>
+        <button class="nav-link" type="button" data-page-link="skills">Skills</button>
+        <button class="nav-link" type="button" data-page-link="contact">Contact</button>
+      </nav>
+    </header>
+
+    <main id="app">
+      <section class="page is-active" data-page="home">
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Linux-first Software Engineer</p>
+            <h1 data-split>Mohamed Khateb</h1>
+            <p class="lead">
+              Final-year software engineering student and DevZone founder who likes the
+              metal close: Linux servers, Bash, Docker, low-level systems, APIs, and data.
+            </p>
+            <div class="hero-actions">
+              <a class="button primary" href="#experience">View Work</a>
+              <a class="button ghost" href="/Mohamed_Khateb_Resume1.pdf" target="_blank" rel="noreferrer">Resume</a>
+            </div>
+          </div>
+          <aside class="signal-panel terminal-panel tilt-card">
+            <span class="panel-kicker">~/focus</span>
+            <strong>Linux, kernels, terminals, and cloud-native systems</strong>
+            <p class="terminal-line">$ whoami</p>
+            <p>Systems-minded backend developer building APIs, containers, and Linux deployments.</p>
+            <p class="terminal-line">$ sudo build --with-motion</p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="page" data-page="experience">
+        <div class="page-heading">
+          <p class="eyebrow">Linux Workbench</p>
+          <h2 data-split>Shipping services from terminal to server.</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-card tilt-card">
+            <span>Jan 2025 - Present</span>
+            <h3>Founder & Full Stack Developer</h3>
+            <p class="company">DevZone</p>
+            <p>Designed Go Gin and Node Express services, Dockerized apps, deployed on Linux servers, and planned scalable architecture with UML.</p>
+          </article>
+          <article class="timeline-card tilt-card">
+            <span>Feb 2024 - Present</span>
+            <h3>Backend Developer</h3>
+            <p class="company">Freelance</p>
+            <p>Built Django and JavaScript backend services, tuned SQL, connected frontend flows, and debugged production-style environments.</p>
+          </article>
+          <article class="timeline-card tilt-card">
+            <span>GitHub Labs</span>
+            <h3>Low-Level & Linux Projects</h3>
+            <p class="company">danbyte123</p>
+            <p>Exploring Assembly, memory management, kernels, x-terminal, minimal Linux audio, and a simple Linux distro built with Docker and BusyBox.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="page" data-page="skills">
+        <div class="page-heading">
+          <p class="eyebrow">Toolchain</p>
+          <h2 data-split>Linux-centered tools for systems, APIs, data, and deployment.</h2>
+        </div>
+        <div class="skill-grid">
+          <article class="skill-card tilt-card">
+            <h3>Linux & Shell</h3>
+            <p>Linux, Bash, terminals, operating systems, server workflows</p>
+          </article>
+          <article class="skill-card tilt-card">
+            <h3>Low-Level</h3>
+            <p>Assembly learning, memory management, kernels, performance thinking</p>
+          </article>
+          <article class="skill-card tilt-card">
+            <h3>Containers</h3>
+            <p>Docker, Linux deployment, Bash automation, Git</p>
+          </article>
+          <article class="skill-card tilt-card">
+            <h3>Backend</h3>
+            <p>Go, Gin, Node.js, Express.js, Django, REST APIs</p>
+          </article>
+          <article class="skill-card tilt-card">
+            <h3>Databases</h3>
+            <p>MySQL, PostgreSQL, MongoDB</p>
+          </article>
+          <article class="skill-card tilt-card">
+            <h3>Data</h3>
+            <p>Python, Pandas, Matplotlib, Power BI, Excel, SQL</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="page" data-page="contact">
+        <div class="contact-layout">
+          <div>
+            <p class="eyebrow">Connect</p>
+            <h2 data-split>Open to Linux, backend, DevOps, and infrastructure opportunities.</h2>
+            <p class="lead compact">
+              Bachelor of Science in Software Engineering at Amman Arab University,
+              2024 - Present. Based in Amman, Jordan. Usually somewhere near a terminal.
+            </p>
+          </div>
+          <div class="contact-card tilt-card">
+            <a href="mailto:mokj2019@gmail.com">mokj2019@gmail.com</a>
+            <a href="tel:+962781705007">0781705007</a>
+            <a href="https://www.devzonecompany.site" target="_blank" rel="noreferrer">devzonecompany.site</a>
+            <a href="https://www.linkedin.com/in/mohamed-khateb-009650284" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a href="https://github.com/danbyte123" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
